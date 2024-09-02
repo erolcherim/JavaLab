@@ -198,4 +198,6 @@ App functionalities:
 ## Unit Tests
 
 Unit tests have been implemented for all controllers/services except the Authentication/JWT ones because those are pretty generic methods. 
-![[Pasted image 20240822142623.png]]
+
+![image](https://github.com/user-attachments/assets/eb12ae61-2937-47bd-8f30-e443c084a56a)
+
