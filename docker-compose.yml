@@ -1,0 +1,23 @@
+# Use root/example as user/password credentials
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'db' 
+    ports: 
+      - 3306:3306
+    volumes:
+      - my-db:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+    my-db:
